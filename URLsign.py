@@ -9,16 +9,16 @@ import urllib.parse as urlparse
 
 
 def sign_url(input_url=None, secret=None):
-    """ Sign a request URL with a URL signing secret.
-      Usage:
-      from urlsigner import sign_url
-      signed_url = sign_url(input_url=my_url, secret=SECRET)
-      Args:
-      input_url - The URL to sign
-      secret    - Your URL signing secret
-      Returns:
-      The signed request URL
-  """
+    """Sign a request URL with a URL signing secret.
+    Usage:
+    from urlsigner import sign_url
+    signed_url = sign_url(input_url=my_url, secret=SECRET)
+    Args:
+    input_url - The URL to sign
+    secret    - Your URL signing secret
+    Returns:
+    The signed request URL
+    """
 
     if not input_url or not secret:
         raise Exception("Both input_url and secret are required")
